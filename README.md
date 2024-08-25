@@ -34,7 +34,7 @@ and their license information.
 The [default board theme `clean_alpha`](https://github.com/hartwork/xiangqi-setup/blob/master/xiangqi_setup/themes/board/clean_alpha/board.svg)
 has been generated with command line tool `xiangqi-board`
 that is included with the **xiangqi-setup** package.  It can be used to create
-variations of the detault theme, e.g. to create a version with reduced spacing
+variations of the default theme, e.g. to create a version with reduced spacing
 in crosses you would run:
 
 ```console

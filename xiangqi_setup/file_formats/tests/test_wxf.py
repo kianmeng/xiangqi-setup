@@ -176,7 +176,7 @@ class BoardTest(TestCase):
 
         other_piece = CANNON  # arbitrary
         assert other_piece != piece
-        x = 3  # arbitary
+        x = 3  # arbitrary
 
         # We're putting other pieces on the board so we know that
         # the location algorithm is picky enough with regard to all of

@@ -111,7 +111,7 @@ def compose_svg(atoms_to_put, options):
     board_svg_filename = os.path.join(options.board_theme_dir, _BOARD_SVG_BASENAME)
     board_ini_filename = os.path.join(options.board_theme_dir, _BOARD_INI_BASENAME)
 
-    # Check for existance ourselves since configparser would throw NoSectionError
+    # Check for existence ourselves since configparser would throw NoSectionError
     # at us for a missing file.
     if not os.path.exists(board_ini_filename):
         raise OSError(errno.ENOENT, "No such file or directory: '%s'" % board_ini_filename)

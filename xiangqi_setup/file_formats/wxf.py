@@ -22,9 +22,9 @@ _SINGLE_MOVE_EXTRACTOR = re.compile(
 _ITEM_ITERATOR = re.compile(
     '(?P<put_piece>[RHEAKCPrheakcp][a-i][0-9])|(?P<move_offset>MOVE [1-9][0-9]*)|(?P<start_party>RED|BLACK)'
 )
-_FEN_ELEMENT_PATERN = '[RHEAKCPNBrheakcpnb1-9]+'
+_FEN_ELEMENT_PATTERN = '[RHEAKCPNBrheakcpnb1-9]+'
 _FEN_EXTRACTOR = re.compile(
-    f'^FEN[ \\t]+(?P<field_state>{_FEN_ELEMENT_PATERN}(?:/{_FEN_ELEMENT_PATERN}){{9}})( (?P<starting_party>[rb]))?',
+    f'^FEN[ \\t]+(?P<field_state>{_FEN_ELEMENT_PATTERN}(?:/{_FEN_ELEMENT_PATTERN}){{9}})( (?P<starting_party>[rb]))?',
     re.MULTILINE)
 
 _UPPER_PIECE, _MIDDLE_PIECE, _LOWER_PIECE, _SINGLE_PIECE = range(4)
